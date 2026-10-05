@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" role="img" aria-label="Studio 2918 lighthouse">
+  <!-- light beams -->
+  <path d="M32 15 L6 8 L6 20 Z" fill="#2a6b5d" opacity=".35"/>
+  <path d="M32 15 L58 8 L58 20 Z" fill="#2a6b5d" opacity=".35"/>
+  <!-- lantern + cap -->
+  <path d="M26 10 L32 5 L38 10 Z" fill="#2a6b5d"/>
+  <rect x="27" y="11" width="10" height="7" rx="1.5" fill="#2a6b5d"/>
+  <rect x="25" y="18" width="14" height="2.5" rx="1" fill="#2a6b5d"/>
+  <!-- tower with stripes -->
+  <path d="M27 21 L37 21 L41 54 L23 54 Z" fill="#2a6b5d"/>
+  <path d="M26.2 29 L37.8 29 L38.5 34.5 L25.5 34.5 Z M24.8 40.5 L39.2 40.5 L39.9 46 L24.1 46 Z" fill="#ffffff" opacity=".9"/>
+  <!-- ground / water line -->
+  <rect x="14" y="54" width="36" height="3" rx="1.5" fill="#2a6b5d"/>
+</svg>
