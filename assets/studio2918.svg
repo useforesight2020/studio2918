@@ -1,64 +1,62 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 120 120" role="img" aria-label="Studio 2918 lighthouse">
+  <!-- Studio 2918 primary mark. Navy #1d3557 + brass #c9a227. 1.6u stroke, 1.2u negative-space gaps. -->
   <g fill="#1d3557">
-    <!-- lightning rod + vent ball -->
-    <rect x="59.5" y="4.5" width="1" height="4"/>
-    <circle cx="60" cy="9.6" r="1.7"/>
-    <!-- pointed cap + eave -->
-    <path d="M52.5 22.4 C55.2 20.6 57.4 16.6 60 11.2 C62.6 16.6 64.8 20.6 67.5 22.4 Z"/>
-    <rect x="51.4" y="22.2" width="17.2" height="1.6"/>
+    <!-- rod, vent ball, ogee roof, eave -->
+    <rect x="59.3" y="3" width="1.4" height="5"/>
+    <circle cx="60" cy="9.4" r="2"/>
+    <path d="M60 11.6 C61.6 15.4 64.6 19.2 68.4 21.6 L51.6 21.6 C55.4 19.2 58.4 15.4 60 11.6 Z"/>
+    <rect x="50.6" y="21.6" width="18.8" height="1.8" rx=".4"/>
+    <!-- lantern frame (right third stays in shadow) -->
+    <rect x="53.6" y="24.6" width="12.8" height="8.4"/>
+    <!-- gallery rail + balusters -->
+    <rect x="46.2" y="31.4" width="27.6" height="1.2" rx=".4"/>
+    <rect x="46.45" y="32.6" width=".9" height="4"/><rect x="48.85" y="32.6" width=".9" height="4"/>
+    <rect x="51.25" y="32.6" width=".9" height="4"/><rect x="53.65" y="32.6" width=".9" height="4"/>
+    <rect x="56.05" y="32.6" width=".9" height="4"/><rect x="58.45" y="32.6" width=".9" height="4"/>
+    <rect x="60.85" y="32.6" width=".9" height="4"/><rect x="63.25" y="32.6" width=".9" height="4"/>
+    <rect x="65.65" y="32.6" width=".9" height="4"/><rect x="68.05" y="32.6" width=".9" height="4"/>
+    <rect x="70.45" y="32.6" width=".9" height="4"/><rect x="72.85" y="32.6" width=".9" height="4"/>
+    <!-- deck + corbel -->
+    <rect x="45.2" y="36.6" width="29.6" height="2.4" rx=".4"/>
+    <path d="M47.8 39 L72.2 39 L68.2 43.6 L51.8 43.6 Z"/>
+    <!-- tower -->
+    <path d="M53.2 44.8 L66.8 44.8 L74.4 92 L45.6 92 Z"/>
   </g>
-  <!-- lantern room: glazed panes, right side in shadow -->
-  <rect x="54.2" y="24.4" width="11.6" height="8.4" fill="#ffffff" stroke="#1d3557" stroke-width="1.3"/>
-  <rect x="62" y="24.4" width="3.8" height="8.4" fill="#1d3557"/>
-  <g stroke="#1d3557" stroke-width=".8">
-    <line x1="58.1" y1="24.6" x2="58.1" y2="32.6"/>
-    <line x1="54.4" y1="28.6" x2="62" y2="28.6"/>
+  <!-- lit glazing -->
+  <g fill="#c9a227">
+    <rect x="55" y="25.8" width="3.2" height="5.4"/>
+    <rect x="59.2" y="25.8" width="3.2" height="5.4"/>
   </g>
-  <rect x="53" y="32.6" width="14" height="1.8" fill="#1d3557"/>
-  <!-- gallery railing -->
-  <g stroke="#1d3557" stroke-linecap="round">
-    <line x1="46.8" y1="32.8" x2="73.2" y2="32.8" stroke-width="1.2"/>
-    <line x1="46.8" y1="35" x2="73.2" y2="35" stroke-width=".6"/>
-    <g stroke-width=".8">
-      <line x1="47.2" y1="32.8" x2="47.2" y2="37.2"/><line x1="49.8" y1="32.8" x2="49.8" y2="37.2"/>
-      <line x1="52.4" y1="32.8" x2="52.4" y2="37.2"/><line x1="55" y1="34.4" x2="55" y2="37.2"/>
-      <line x1="57.6" y1="34.4" x2="57.6" y2="37.2"/><line x1="60.2" y1="34.4" x2="60.2" y2="37.2"/>
-      <line x1="62.8" y1="34.4" x2="62.8" y2="37.2"/><line x1="65.4" y1="34.4" x2="65.4" y2="37.2"/>
-      <line x1="67.8" y1="32.8" x2="67.8" y2="37.2"/><line x1="70.4" y1="32.8" x2="70.4" y2="37.2"/>
-      <line x1="72.8" y1="32.8" x2="72.8" y2="37.2"/>
-    </g>
+  <!-- corbel brackets (negative space) -->
+  <g stroke="#ffffff" stroke-width=".8" stroke-linecap="round">
+    <line x1="53.8" y1="39.8" x2="54.8" y2="42.8"/><line x1="58.2" y1="39.8" x2="58.5" y2="42.8"/>
+    <line x1="61.8" y1="39.8" x2="61.5" y2="42.8"/><line x1="66.2" y1="39.8" x2="65.2" y2="42.8"/>
   </g>
-  <g fill="#1d3557">
-    <!-- gallery deck + corbel with brackets -->
-    <rect x="45.6" y="37.2" width="28.8" height="2.4"/>
-    <path d="M48.4 39.6 L71.6 39.6 L67.6 44 L52.4 44 Z"/>
-  </g>
-  <g stroke="#ffffff" stroke-width=".7">
-    <line x1="53.5" y1="40.2" x2="54.6" y2="43.4"/><line x1="58.2" y1="40.2" x2="58.4" y2="43.4"/>
-    <line x1="61.8" y1="40.2" x2="61.6" y2="43.4"/><line x1="66.5" y1="40.2" x2="65.4" y2="43.4"/>
-  </g>
-  <!-- tower: left half light, right half solid -->
-  <path d="M53 44 L60 44 L60 94 L46 94 Z" fill="#ffffff" stroke="#1d3557" stroke-width="1.4" stroke-linejoin="round"/>
-  <path d="M60 44 L67 44 L74 94 L60 94 Z" fill="#1d3557"/>
-  <!-- windows -->
-  <rect x="55.6" y="51" width="2.4" height="5" rx="1.2" fill="#1d3557"/>
-  <rect x="62.2" y="58.5" width="2.4" height="5" rx="1.2" fill="#ffffff"/>
-  <rect x="54.4" y="65" width="2.6" height="5.2" rx="1.3" fill="#1d3557"/>
-  <!-- band -->
-  <rect x="47.4" y="75.4" width="25.2" height="3.4" fill="#1d3557"/>
+  <!-- sunlit left face, inset 1.6u -->
+  <path d="M54.6 46.4 L60 46.4 L60 90.4 L47.5 90.4 Z" fill="#ffffff"/>
+  <!-- staircase windows, staggered -->
+  <rect x="56.2" y="51.6" width="2.2" height="4.6" rx="1.1" fill="#1d3557"/>
+  <rect x="62.4" y="57.8" width="2.2" height="4.6" rx="1.1" fill="#ffffff"/>
+  <rect x="55.2" y="63.6" width="2.4" height="4.8" rx="1.2" fill="#1d3557"/>
+  <rect x="63.6" y="79.4" width="2.4" height="4.8" rx="1.2" fill="#ffffff"/>
+  <!-- day-mark band, floated on 1.2u gaps -->
+  <rect x="40" y="70.8" width="40" height="5.8" fill="#ffffff"/>
+  <rect x="47.4" y="72" width="25.2" height="3.4" rx=".4" fill="#1d3557"/>
   <!-- arched door -->
-  <path d="M57.2 94 L57.2 88.4 Q57.2 85.4 60 85.4 Q62.8 85.4 62.8 88.4 L62.8 94 Z" fill="#ffffff" stroke="#1d3557" stroke-width="1"/>
-  <!-- rocks hugging the base -->
-  <path d="M12 100 C17 95.4 22 93.6 27 94.4 C30.4 89.6 36.4 88.2 40.6 90.8 C43.8 89.4 47.4 90.6 49 93.6 L71 93.6 C72.8 90.2 76.6 88.8 80.2 90.4 C84 87.8 89.8 89.2 93 93.8 C97.6 94 102.6 96.6 108 100 Z" fill="#1d3557"/>
-  <g stroke="#ffffff" stroke-width=".8" stroke-linecap="round" fill="none">
-    <path d="M33 92.6 L36 95.6"/><path d="M41.6 93 L43.8 96.2"/><path d="M24 97 L27 95.6"/>
-    <path d="M84 92.4 L81.4 95.8"/><path d="M77.4 93.2 L75.6 96"/><path d="M95.6 97 L92.6 95.8"/>
+  <path d="M57.4 92 L57.4 87.6 Q57.4 84.8 60 84.8 Q62.6 84.8 62.6 87.6 L62.6 92 Z" fill="#ffffff" stroke="#1d3557" stroke-width="1.2"/>
+  <!-- headland -->
+  <path d="M14 98.2 C18.6 94.2 23.4 92.6 27.8 93.4 C31 88.8 36.6 87.4 40.6 89.8 C43.6 88.6 46.6 89.6 48 92 L72 92 C73.4 89.6 76.4 88.6 79.4 89.8 C83.4 87.4 89 88.8 92.2 93.4 C96.6 92.6 101.4 94.2 106 98.2 Z" fill="#1d3557"/>
+  <g stroke="#ffffff" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" fill="none">
+    <path d="M35.4 90.6 L38 93.6 L37.4 96.4"/><path d="M24.6 96.8 L28.4 95.2"/><path d="M43.4 92.4 L44.6 95"/>
+    <path d="M84.6 90.6 L82 93.6 L82.6 96.4"/><path d="M95.4 96.8 L91.6 95.2"/><path d="M76.6 92.4 L75.4 95"/>
   </g>
-  <!-- horizon + water -->
-  <g stroke="#1d3557" stroke-linecap="round">
-    <line x1="8" y1="100" x2="112" y2="100" stroke-width="1.6"/>
-    <line x1="30" y1="104.4" x2="52" y2="104.4" stroke-width=".9"/>
-    <line x1="62" y1="104.4" x2="90" y2="104.4" stroke-width=".9"/>
-    <line x1="44" y1="108.6" x2="76" y2="108.6" stroke-width=".9"/>
+  <!-- horizon on a 1.2u gap, receding water, brass reflection -->
+  <rect x="8" y="99.4" width="104" height="1.6" rx=".8" fill="#1d3557"/>
+  <g stroke-linecap="round" stroke-width="1.2">
+    <line x1="28" y1="105" x2="54" y2="105" stroke="#1d3557"/>
+    <line x1="57" y1="105" x2="63" y2="105" stroke="#c9a227"/>
+    <line x1="66" y1="105" x2="92" y2="105" stroke="#1d3557"/>
+    <line x1="42" y1="109.6" x2="78" y2="109.6" stroke="#1d3557"/>
+    <line x1="53" y1="114.2" x2="67" y2="114.2" stroke="#1d3557"/>
   </g>
 </svg>
