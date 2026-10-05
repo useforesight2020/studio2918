@@ -4,60 +4,151 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Studio 2918</title>
-<meta name="description" content="Studio 2918 LLC builds practical software for independent eye care practices and everyday life.">
+<meta name="description" content="Studio 2918 LLC builds practical software for independent eye care practices: workforce tools, an AI charting assistant, and more.">
+<link rel="icon" href="assets/eyescribe.svg">
 <style>
   :root {
-    --bg: #fbfaf7; --surface: #ffffff; --text: #1d1d1f; --muted: #5f6368;
-    --line: #e6e3dc; --accent: #2f5d50; --accent-soft: #e7efe9;
+    --bg: #fbfaf7; --surface: #ffffff; --text: #1b1d1c; --muted: #5d6360; --faint: #8a908d;
+    --line: #e7e3da; --accent: #2a6b5d; --accent-soft: #e6f0ec; --shadow: 0 1px 2px rgba(20,30,25,.04), 0 8px 24px rgba(20,30,25,.06);
   }
   @media (prefers-color-scheme: dark) {
-    :root { --bg: #121413; --surface: #1a1d1c; --text: #ececea; --muted: #a3a8a5;
-            --line: #2a2e2c; --accent: #8fc1ad; --accent-soft: #1f2b27; }
+    :root { --bg: #111413; --surface: #181c1b; --text: #ecedeb; --muted: #a6aca9; --faint: #7d8481;
+            --line: #2a2f2d; --accent: #8cc8b5; --accent-soft: #1d2b27; --shadow: none; }
   }
   * { box-sizing: border-box; }
+  html { scroll-behavior: smooth; }
   body { margin: 0; background: var(--bg); color: var(--text);
-         font: 17px/1.6 -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif; }
-  main { max-width: 760px; margin: 0 auto; padding: 64px 20px 48px; }
-  .mark { font-weight: 700; letter-spacing: .02em; font-size: 15px; color: var(--accent); text-transform: uppercase; }
-  h1 { font-size: clamp(30px, 6vw, 44px); line-height: 1.15; margin: 10px 0 14px; letter-spacing: -.01em; }
-  .lead { color: var(--muted); font-size: 19px; margin: 0 0 44px; max-width: 600px; }
-  .product { background: var(--surface); border: 1px solid var(--line); border-radius: 14px;
-             padding: 22px 22px 18px; margin-bottom: 16px; }
-  .product h2 { margin: 0 0 6px; font-size: 21px; display: flex; gap: 10px; align-items: baseline; flex-wrap: wrap; }
-  .tag { font-size: 12px; font-weight: 600; color: var(--accent); background: var(--accent-soft);
-         padding: 2px 9px; border-radius: 999px; }
-  .product p { margin: 0 0 6px; color: var(--muted); }
-  .product a { color: var(--accent); }
-  footer { margin-top: 48px; padding-top: 20px; border-top: 1px solid var(--line); color: var(--muted); font-size: 14px; }
+         font: 17px/1.65 -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+         -webkit-font-smoothing: antialiased; }
+  .wrap { max-width: 880px; margin: 0 auto; padding: 0 20px; }
+  header { padding: 22px 0; }
+  header .wrap { display: flex; align-items: center; justify-content: space-between; gap: 16px; }
+  .brand { font-weight: 700; letter-spacing: .04em; text-transform: uppercase; font-size: 14px; color: var(--accent); text-decoration: none; }
+  nav a { color: var(--muted); text-decoration: none; font-size: 15px; margin-left: 18px; }
+  nav a:hover { color: var(--text); }
+  .hero { padding: 56px 0 40px; }
+  .hero h1 { font-size: clamp(32px, 6vw, 52px); line-height: 1.08; letter-spacing: -.02em; margin: 0 0 18px; max-width: 760px; }
+  .hero p { font-size: clamp(18px, 2.4vw, 21px); color: var(--muted); margin: 0; max-width: 640px; }
+  .section-label { font-size: 13px; font-weight: 700; letter-spacing: .08em; text-transform: uppercase; color: var(--faint); margin: 48px 0 16px; }
+  .product { display: grid; grid-template-columns: 76px 1fr; gap: 22px; background: var(--surface);
+             border: 1px solid var(--line); border-radius: 18px; padding: 26px; margin-bottom: 18px; box-shadow: var(--shadow); }
+  .logo { width: 76px; height: 76px; border-radius: 18px; display: block; }
+  .product h2 { margin: 2px 0 4px; font-size: 24px; letter-spacing: -.01em; display: flex; flex-wrap: wrap; gap: 10px; align-items: center; }
+  .tag { font-size: 12px; font-weight: 650; color: var(--accent); background: var(--accent-soft); padding: 3px 10px; border-radius: 999px; letter-spacing: .01em; }
+  .tagline { color: var(--text); font-weight: 600; margin: 0 0 10px; }
+  .product p { color: var(--muted); margin: 0 0 12px; }
+  .product ul { margin: 0 0 12px; padding-left: 18px; color: var(--muted); }
+  .product li { margin: 4px 0; }
+  .product li strong { color: var(--text); font-weight: 600; }
+  .product a { color: var(--accent); font-weight: 600; text-decoration: none; }
+  .product a:hover { text-decoration: underline; }
+  .about { display: grid; grid-template-columns: 1fr 1fr; gap: 18px; margin-top: 8px; }
+  .about div { background: var(--surface); border: 1px solid var(--line); border-radius: 16px; padding: 22px; }
+  .about h3 { margin: 0 0 6px; font-size: 18px; }
+  .about p { margin: 0; color: var(--muted); font-size: 16px; }
+  .contact { margin: 48px 0 0; padding: 30px; border-radius: 18px; background: var(--accent-soft); }
+  .contact h2 { margin: 0 0 6px; font-size: 24px; }
+  .contact p { margin: 0; color: var(--muted); }
+  .contact a { color: var(--accent); font-weight: 700; text-decoration: none; }
+  footer { color: var(--faint); font-size: 14px; padding: 36px 0 44px; }
+  @media (max-width: 600px) {
+    .product { grid-template-columns: 1fr; gap: 14px; padding: 22px; }
+    .logo { width: 60px; height: 60px; border-radius: 14px; }
+    .about { grid-template-columns: 1fr; }
+    nav a { margin-left: 12px; }
+  }
 </style>
 </head>
 <body>
-<main>
-  <div class="mark">Studio 2918</div>
-  <h1>Practical software for independent eye care, and a little for home.</h1>
-  <p class="lead">Studio 2918 LLC is a small software studio founded by an optometrist in Oklahoma.
-    We build tools that take busywork off the plates of doctors, staff, and families.</p>
+<header>
+  <div class="wrap">
+    <a class="brand" href="#">Studio 2918</a>
+    <nav><a href="#products">Products</a><a href="#about">About</a><a href="#contact">Contact</a></nav>
+  </div>
+</header>
 
-  <section class="product">
-    <h2>Foresight <span class="tag">Live</span></h2>
-    <p>Workforce and operations for independent practices: staff, schedules, time cards, and who can cover what,
-       built mobile-first for the people who keep a clinic running.</p>
-    <p><a href="https://useforesight.co">useforesight.co</a></p>
+<main class="wrap">
+  <section class="hero">
+    <h1>Software that gives independent eye care practices their time back.</h1>
+    <p>Studio 2918 is a small software studio founded by a practicing optometrist in Oklahoma.
+       We build tools around how clinics actually run, starting in our own practice.</p>
   </section>
 
-  <section class="product">
-    <h2>EyeScribe <span class="tag">In development</span></h2>
-    <p>A charting assistant for eye care that learns how each doctor charts, asks when it isn't sure,
-       and handles the clicks so the doctor can focus on the patient. Currently in a pilot at one practice.</p>
-  </section>
+  <div class="section-label" id="products">Products</div>
 
-  <section class="product">
-    <h2>Hamm <span class="tag">Personal</span></h2>
-    <p>A household money helper that sorts spending into the right categories, fills in who checks and
-       payment-app transfers went to, and matches item-level receipts.</p>
-  </section>
+  <article class="product">
+    <img class="logo" src="assets/foresight.png" alt="Foresight logo">
+    <div>
+      <h2>Foresight <span class="tag">Live</span></h2>
+      <p class="tagline">Workforce and operations for independent practices.</p>
+      <p>Your practice software tracks patients. Foresight tracks the people who take care of them.
+         It gives owners and managers one place to see who's working, who's out, and who can cover what,
+         built mobile-first for the way clinic teams really work.</p>
+      <ul>
+        <li><strong>Staff and roles:</strong> profiles, skills, and cross-training in one place</li>
+        <li><strong>Time clock and time cards:</strong> clock in from a phone; review and approve hours</li>
+        <li><strong>Clinic hub:</strong> who's in, who's off, and what needs attention today</li>
+        <li><strong>Coverage:</strong> know who can step in when someone calls out</li>
+      </ul>
+      <a href="https://useforesight.co">useforesight.co →</a>
+    </div>
+  </article>
 
-  <footer>© 2026 Studio 2918 LLC · Miami, Oklahoma</footer>
+  <article class="product">
+    <img class="logo" src="assets/eyescribe.svg" alt="EyeScribe logo">
+    <div>
+      <h2>EyeScribe <span class="tag">In development</span></h2>
+      <p class="tagline">A charting assistant that learns how you chart.</p>
+      <p>Most AI scribes write a generic note. EyeScribe watches how each doctor actually charts
+         in their own EHR (which findings go where, how they grade, how they plan) and learns to do it
+         the same way. When it isn't sure, it asks instead of guessing.</p>
+      <ul>
+        <li><strong>Learns your style:</strong> your grades, your categories, your plans and recalls</li>
+        <li><strong>Hands-free:</strong> listens during the exam and handles the clicks</li>
+        <li><strong>Asks, doesn't guess:</strong> anything unfamiliar comes back to the doctor</li>
+        <li><strong>Doctor stays in charge:</strong> every chart is reviewed and signed by the doctor</li>
+      </ul>
+      <p>Currently in a pilot at one independent practice.</p>
+    </div>
+  </article>
+
+  <article class="product">
+    <img class="logo" src="assets/hamm.png" alt="Hamm logo">
+    <div>
+      <h2>Hamm <span class="tag">Personal</span></h2>
+      <p class="tagline">A household money helper that does the tedious part.</p>
+      <p>Hamm takes the busywork out of keeping a household budget. It sorts spending into the
+         right categories, figures out who checks and payment-app transfers went to, and matches
+         item-level receipts so you can answer questions like "how much did we spend on diapers this year?"</p>
+      <ul>
+        <li><strong>Auto-sorting:</strong> card charges filed into the right budget categories</li>
+        <li><strong>Lookups:</strong> payees for checks, Venmo, Zelle, and Cash App</li>
+        <li><strong>Receipts:</strong> item-level detail from everyday stores</li>
+      </ul>
+    </div>
+  </article>
+
+  <div class="section-label" id="about">About</div>
+  <div class="about">
+    <div>
+      <h3>Built from inside the exam room</h3>
+      <p>Everything starts as a fix for a real problem in a real practice, used by real staff,
+         before it's offered to anyone else.</p>
+    </div>
+    <div>
+      <h3>Privacy first</h3>
+      <p>Patient information is handled with care: kept to what's needed, and handled only
+         by services under the appropriate agreements.</p>
+    </div>
+  </div>
+
+  <section class="contact" id="contact">
+    <h2>Get in touch</h2>
+    <p>Questions, partnerships, or interested in trying something early?
+       Email <a href="mailto:john@studio2918.com">john@studio2918.com</a>.</p>
+  </section>
 </main>
+
+<footer><div class="wrap">© 2026 Studio 2918 LLC · Miami, Oklahoma</div></footer>
 </body>
 </html>
