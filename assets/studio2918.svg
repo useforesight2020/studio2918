@@ -1,14 +1,39 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" role="img" aria-label="Studio 2918 lighthouse">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 120 140" role="img" aria-label="Studio 2918 lighthouse">
+  <defs>
+    <clipPath id="tower"><path d="M47 44 L73 44 L80 112 L40 112 Z"/></clipPath>
+  </defs>
   <!-- light beams -->
-  <path d="M32 15 L6 8 L6 20 Z" fill="#2a6b5d" opacity=".35"/>
-  <path d="M32 15 L58 8 L58 20 Z" fill="#2a6b5d" opacity=".35"/>
-  <!-- lantern + cap -->
-  <path d="M26 10 L32 5 L38 10 Z" fill="#2a6b5d"/>
-  <rect x="27" y="11" width="10" height="7" rx="1.5" fill="#2a6b5d"/>
-  <rect x="25" y="18" width="14" height="2.5" rx="1" fill="#2a6b5d"/>
-  <!-- tower with stripes -->
-  <path d="M27 21 L37 21 L41 54 L23 54 Z" fill="#2a6b5d"/>
-  <path d="M26.2 29 L37.8 29 L38.5 34.5 L25.5 34.5 Z M24.8 40.5 L39.2 40.5 L39.9 46 L24.1 46 Z" fill="#ffffff" opacity=".9"/>
-  <!-- ground / water line -->
-  <rect x="14" y="54" width="36" height="3" rx="1.5" fill="#2a6b5d"/>
+  <path d="M60 33 L6 22 L6 42 Z" fill="#f2c14e"/>
+  <path d="M60 33 L114 22 L114 42 Z" fill="#f2c14e"/>
+  <!-- finial + dome -->
+  <rect x="59" y="5" width="2" height="7" rx="1" fill="#1d3557"/>
+  <circle cx="60" cy="5" r="2" fill="#1d3557"/>
+  <path d="M47 24 Q47 11 60 11 Q73 11 73 24 Z" fill="#1d3557"/>
+  <path d="M52 21 Q53 15 59 14" fill="none" stroke="#ffffff" stroke-width="1.6" stroke-linecap="round" opacity=".55"/>
+  <rect x="44" y="24" width="32" height="3" rx="1.5" fill="#1d3557"/>
+  <!-- lantern room with arched windows -->
+  <rect x="48" y="27" width="24" height="13" fill="#1d3557"/>
+  <path d="M51.5 39 L51.5 32 Q51.5 29 54.5 29 Q57.5 29 57.5 32 L57.5 39 Z" fill="#ffffff"/>
+  <path d="M62.5 39 L62.5 32 Q62.5 29 65.5 29 Q68.5 29 68.5 32 L68.5 39 Z" fill="#ffffff"/>
+  <!-- gallery + railing -->
+  <rect x="40" y="40" width="40" height="4" rx="1" fill="#1d3557"/>
+  <rect x="41" y="34" width="38" height="1.6" rx=".8" fill="#1d3557"/>
+  <g fill="#1d3557">
+    <rect x="41.5" y="34" width="1.4" height="6"/><rect x="77.1" y="34" width="1.4" height="6"/>
+    <rect x="45" y="35" width="1.1" height="5"/><rect x="73.9" y="35" width="1.1" height="5"/>
+  </g>
+  <!-- tower with diagonal stripes -->
+  <path d="M47 44 L73 44 L80 112 L40 112 Z" fill="#1d3557"/>
+  <g clip-path="url(#tower)" fill="#ffffff">
+    <path d="M36 66 L86 54 L86 63 L36 75 Z"/>
+    <path d="M36 92 L86 80 L86 89 L36 101 Z"/>
+  </g>
+  <rect x="58" y="49" width="4" height="7" rx="2" fill="#ffffff"/>
+  <path d="M56 112 L56 105 Q56 101 60 101 Q64 101 64 105 L64 112 Z" fill="#ffffff"/>
+  <!-- rocks + base -->
+  <path d="M26 120 Q29 111 37 113 Q41 107 48 111 L48 112 L72 112 L72 111 Q79 106 83 112 Q90 110 94 120 Z" fill="#1d3557"/>
+  <!-- water -->
+  <rect x="14" y="124" width="92" height="3" rx="1.5" fill="#1d3557"/>
+  <rect x="28" y="130" width="64" height="3" rx="1.5" fill="#1d3557"/>
+  <rect x="42" y="136" width="36" height="3" rx="1.5" fill="#1d3557"/>
 </svg>

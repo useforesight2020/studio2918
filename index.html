@@ -9,11 +9,11 @@
 <style>
   :root {
     --bg: #fbfaf7; --surface: #ffffff; --text: #1b1d1c; --muted: #5d6360; --faint: #8a908d;
-    --line: #e7e3da; --accent: #2a6b5d; --accent-soft: #e6f0ec; --shadow: 0 1px 2px rgba(20,30,25,.04), 0 8px 24px rgba(20,30,25,.06);
+    --line: #e7e3da; --accent: #1d3557; --accent-soft: #e8edf5; --gold: #f2c14e; --shadow: 0 1px 2px rgba(20,30,25,.04), 0 8px 24px rgba(20,30,25,.06);
   }
   @media (prefers-color-scheme: dark) {
     :root { --bg: #111413; --surface: #181c1b; --text: #ecedeb; --muted: #a6aca9; --faint: #7d8481;
-            --line: #2a2f2d; --accent: #8cc8b5; --accent-soft: #1d2b27; --shadow: none; }
+            --line: #2a2f2d; --accent: #a9c1e3; --accent-soft: #1b2433; --gold: #f2c14e; --shadow: none; }
   }
   * { box-sizing: border-box; }
   html { scroll-behavior: smooth; }
@@ -23,7 +23,8 @@
   .wrap { max-width: 880px; margin: 0 auto; padding: 0 20px; }
   header { padding: 22px 0; }
   header .wrap { display: flex; align-items: center; justify-content: space-between; gap: 16px; }
-  .brand img { display: block; }
+  .brand .mark { display: block; }
+  @media (prefers-color-scheme: dark) { .brand .mark { background: #f4f1ea; border-radius: 10px; padding: 3px 4px; } }
   .brand { display: flex; align-items: center; gap: 10px; font-weight: 700; letter-spacing: .04em; text-transform: uppercase; font-size: 14px; color: var(--accent); text-decoration: none; }
   nav a { color: var(--muted); text-decoration: none; font-size: 15px; margin-left: 18px; }
   nav a:hover { color: var(--text); }
@@ -63,15 +64,7 @@
 <body>
 <header>
   <div class="wrap">
-    <a class="brand" href="#"><svg class="mark" viewBox="0 0 64 64" width="30" height="30" aria-hidden="true">
-      <path d="M32 15 L6 8 L6 20 Z M32 15 L58 8 L58 20 Z" fill="currentColor" opacity=".35"/>
-      <path d="M26 10 L32 5 L38 10 Z" fill="currentColor"/>
-      <rect x="27" y="11" width="10" height="7" rx="1.5" fill="currentColor"/>
-      <rect x="25" y="18" width="14" height="2.5" rx="1" fill="currentColor"/>
-      <path d="M27 21 L37 21 L41 54 L23 54 Z" fill="currentColor"/>
-      <path d="M26.2 29 L37.8 29 L38.5 34.5 L25.5 34.5 Z M24.8 40.5 L39.2 40.5 L39.9 46 L24.1 46 Z" fill="var(--bg)"/>
-      <rect x="14" y="54" width="36" height="3" rx="1.5" fill="currentColor"/>
-    </svg>Studio 2918</a>
+    <a class="brand" href="#"><img class="mark" src="assets/studio2918.svg" alt="" width="34" height="40">Studio 2918</a>
     <nav><a href="#products">Products</a><a href="#about">About</a><a href="#contact">Contact</a></nav>
   </div>
 </header>
