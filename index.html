@@ -34,6 +34,7 @@
   .product { display: grid; grid-template-columns: 76px 1fr; gap: 22px; background: var(--surface);
              border: 1px solid var(--line); border-radius: 18px; padding: 26px; margin-bottom: 18px; box-shadow: var(--shadow); }
   .logo { width: 76px; height: 76px; border-radius: 18px; display: block; }
+  .logo.edge { box-shadow: 0 0 0 1px var(--line); }
   .product h2 { margin: 2px 0 4px; font-size: 24px; letter-spacing: -.01em; display: flex; flex-wrap: wrap; gap: 10px; align-items: center; }
   .tag { font-size: 12px; font-weight: 650; color: var(--accent); background: var(--accent-soft); padding: 3px 10px; border-radius: 999px; letter-spacing: .01em; }
   .tagline { color: var(--text); font-weight: 600; margin: 0 0 10px; }
@@ -108,7 +109,7 @@
   <div class="section-label" id="products">Products</div>
 
   <article class="product">
-    <img class="logo" src="assets/foresight.png" alt="Foresight logo">
+    <img class="logo edge" src="assets/foresight.png" alt="Foresight logo">
     <div>
       <h2>Foresight <span class="tag">Live</span></h2>
       <p class="tagline">Workforce and operations for independent practices.</p>
