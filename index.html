@@ -24,6 +24,12 @@
   header { padding: 22px 0; }
   header .wrap { display: flex; align-items: center; justify-content: space-between; gap: 16px; }
   .brand .mark { display: block; }
+  .brand { position: relative; }
+  /* lighthouse beam: starts at the lantern, ends exactly at the end of "2918" */
+  .brand .beam { position: absolute; left: 30px; right: 0; top: 10.5px; height: 10px; background: currentColor;
+                 clip-path: polygon(0 40%, 100% 0, 100% 100%, 0 60%);
+                 -webkit-mask-image: linear-gradient(90deg, #000 0%, rgba(0,0,0,.4) 70%, transparent 100%);
+                 mask-image: linear-gradient(90deg, #000 0%, rgba(0,0,0,.4) 70%, transparent 100%); }
   .brand { display: flex; align-items: flex-end; gap: 12px; font-weight: 700; letter-spacing: .04em; text-transform: uppercase; font-size: 21px; line-height: 1; color: var(--text); text-decoration: none; }
   nav a { color: var(--muted); text-decoration: none; font-size: 15px; margin-left: 18px; }
   nav a:hover { color: var(--text); }
@@ -94,7 +100,7 @@
 <rect x="49.6" y="67.2" width="20.8" height="3.4"/>
 <path d="M30 90 C34 86.6 38 85.4 41.4 86 C43.6 83 47 82.4 49.6 84.4 L49.6 86 L71 86 L71 84.2 C73.4 82.4 77 82.8 79.2 85.4 C83.4 84.8 87.6 86.6 90 90 Z"/>
 <rect x="24" y="89.6" width="72" height="1.2" rx=".6"/>
-</svg>Studio 2918</a>
+</svg><span class="beam" aria-hidden="true"></span>Studio 2918</a>
     <nav><a href="#products">Products</a><a href="#about">About</a><a href="#contact">Contact</a></nav>
   </div>
 </header>
